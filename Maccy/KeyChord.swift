@@ -33,6 +33,22 @@ enum KeyChord: CaseIterable {
       return nil
     }
   }
+    
+  static var latexKey: Key? {
+    if let shortcut = KeyboardShortcuts.Shortcut(name: .latex) {
+      return Sauce.shared.key(for: shortcut.carbonKeyCode)
+    } else {
+      return nil
+    }
+  }
+    
+  static var latexModifiers: NSEvent.ModifierFlags? {
+    if let shortcut = KeyboardShortcuts.Shortcut(name: .latex) {
+      return shortcut.modifiers.intersection(.deviceIndependentFlagsMask)
+    } else {
+      return nil
+    }
+  }
   static var pinModifiers: NSEvent.ModifierFlags? {
     if let shortcut = KeyboardShortcuts.Shortcut(name: .pin) {
       return shortcut.modifiers.intersection(.deviceIndependentFlagsMask)
@@ -45,6 +61,7 @@ enum KeyChord: CaseIterable {
   case clearHistoryAll
   case clearSearch
   case deleteCurrentItem
+  case latexifyCurrentItem
   case deleteOneCharFromSearch
   case deleteLastWordFromSearch
   case hide
@@ -68,6 +85,8 @@ enum KeyChord: CaseIterable {
       self = .clearSearch
     case (KeyChord.deleteKey, KeyChord.deleteModifiers):
       self = .deleteCurrentItem
+    case (KeyChord.latexKey, KeyChord.latexModifiers):
+      self = .latexifyCurrentItem
     case (.delete, []), (.h, [.control]):
       self = .deleteOneCharFromSearch
     case (.w, [.control]):

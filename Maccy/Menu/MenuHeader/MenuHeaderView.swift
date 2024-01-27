@@ -139,6 +139,9 @@ class MenuHeaderView: NSView, NSSearchFieldDelegate {
       customMenu?.delete()
       setQuery("")
       return true
+    case .latexifyCurrentItem:
+      customMenu?.latexify()
+      return true
     case .clearHistory:
       performMenuItemAction(MenuFooter.clear.rawValue)
       return true

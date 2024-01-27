@@ -16,6 +16,7 @@
 		4762D6972467226100B3A2BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4762D6992467226100B3A2BA /* Localizable.strings */; };
 		5AA9C8402AD80E1B003340F9 /* IgnorePasteboardTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA9C83F2AD80E1B003340F9 /* IgnorePasteboardTypesViewController.swift */; };
 		5ACA94F52AD4D1E200ECAB6A /* IgnoreRegexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACA94F42AD4D1E200ECAB6A /* IgnoreRegexViewController.swift */; };
+		88F357182B64ECF800F09166 /* Fuzi in Frameworks */ = {isa = PBXBuildFile; productRef = 88F357172B64ECF800F09166 /* Fuzi */; };
 		DA009931256411F90030E697 /* appcast.xml in Resources */ = {isa = PBXBuildFile; fileRef = DA00992C256411F90030E697 /* appcast.xml */; };
 		DA009932256411F90030E697 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA00992D256411F90030E697 /* README.md */; };
 		DA009934256411F90030E697 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA00992F256411F90030E697 /* LICENSE */; };
@@ -162,6 +163,7 @@
 		7CEEFDEF24F41F8500ECAD2A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AppearanceSettingsViewController.strings"; sourceTree = "<group>"; };
 		7CEEFDF024F41F8500ECAD2A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/GeneralSettingsViewController.strings"; sourceTree = "<group>"; };
 		7CEEFDF124F41F8500ECAD2A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		88F3571A2B64FDBD00F09166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Preview.strings; sourceTree = "<group>"; };
 		ABC7285D283A9052001EE086 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/AdvancedSettingsViewController.strings; sourceTree = "<group>"; };
 		ABC7285E283A9052001EE086 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/AppearanceSettingsViewController.strings; sourceTree = "<group>"; };
 		ABC7285F283A9052001EE086 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/GeneralSettingsViewController.strings; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 				2F39CB042AD9A93C00B749FD /* Sparkle in Frameworks */,
 				DA009955256414E60030E697 /* KeyboardShortcuts in Frameworks */,
 				DA5F46512020E9FB00425C11 /* Carbon.framework in Frameworks */,
+				88F357182B64ECF800F09166 /* Fuzi in Frameworks */,
 				DA009947256414800030E697 /* SwiftHEXColors in Frameworks */,
 				DA5154D82564102900C01004 /* Sauce in Frameworks */,
 				2F39CB0A2AD9AE1F00B749FD /* Settings in Frameworks */,
@@ -675,6 +678,7 @@
 				DAC6CE9026E1AC19002B70B8 /* LaunchAtLogin */,
 				2F39CB032AD9A93C00B749FD /* Sparkle */,
 				2F39CB092AD9AE1F00B749FD /* Settings */,
+				88F357172B64ECF800F09166 /* Fuzi */,
 			);
 			productName = Maccy;
 			productReference = DAEE38431E3DBEB100DD2966 /* Maccy.app */;
@@ -743,6 +747,7 @@
 				DAC6CE8F26E1AC19002B70B8 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
 				2F39CB022AD9A93C00B749FD /* XCRemoteSwiftPackageReference "Sparkle" */,
 				2F39CB082AD9AE1F00B749FD /* XCRemoteSwiftPackageReference "Settings" */,
+				88F357162B64ECF800F09166 /* XCRemoteSwiftPackageReference "Fuzi" */,
 			);
 			productRefGroup = DAEE38441E3DBEB100DD2966 /* Products */;
 			projectDirPath = "";
@@ -1089,6 +1094,7 @@
 				DADBA97A2985C7B500EC46FB /* th */,
 				DADBA97C2985C7B600EC46FB /* tr */,
 				DADBA97E2985C7B600EC46FB /* uk */,
+				88F3571A2B64FDBD00F09166 /* en */,
 			);
 			name = Preview.xib;
 			sourceTree = "<group>";
@@ -1353,7 +1359,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 28;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = MN3X4648SC;
+				DEVELOPMENT_TEAM = 335W2YNT8B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1367,7 +1373,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 0.29.4;
-				PRODUCT_BUNDLE_IDENTIFIER = org.p0deje.Maccy;
+				PRODUCT_BUNDLE_IDENTIFIER = top.ourfor.app.Maccy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1388,7 +1394,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 28;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = MN3X4648SC;
+				DEVELOPMENT_TEAM = 335W2YNT8B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1402,7 +1408,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 0.29.4;
-				PRODUCT_BUNDLE_IDENTIFIER = org.p0deje.Maccy;
+				PRODUCT_BUNDLE_IDENTIFIER = top.ourfor.app.Maccy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -1467,6 +1473,14 @@
 				minimumVersion = 3.0.3;
 			};
 		};
+		88F357162B64ECF800F09166 /* XCRemoteSwiftPackageReference "Fuzi" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cezheng/Fuzi.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
 		DA00993E256414560030E697 /* XCRemoteSwiftPackageReference "fuse-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/krisk/fuse-swift";
@@ -1519,6 +1533,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2F39CB082AD9AE1F00B749FD /* XCRemoteSwiftPackageReference "Settings" */;
 			productName = Settings;
+		};
+		88F357172B64ECF800F09166 /* Fuzi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88F357162B64ECF800F09166 /* XCRemoteSwiftPackageReference "Fuzi" */;
+			productName = Fuzi;
 		};
 		DA00993F256414560030E697 /* Fuse */ = {
 			isa = XCSwiftPackageProductDependency;
